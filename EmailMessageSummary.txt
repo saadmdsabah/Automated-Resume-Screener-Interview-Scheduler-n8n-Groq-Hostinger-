@@ -1,0 +1,16 @@
+Please approve or disapprove this applicant?
+
+Applicant Details:
+Name: {{ $json.output.fullName }}
+Email: {{ $json.output.email }}
+
+Years of Experience with C#: {{ $json.output.cSharpYearsExperience }}
+
+Notable Qualifications:
+{{ $json.output.notableQualifications }}
+
+Notable Work Experience
+{{ $json.output.notableWorkExperience }}
+
+My Recommendation
+{{ ($json.output.Recommended?"I recommend this applicant":"I do not recommend this applicant") }}
